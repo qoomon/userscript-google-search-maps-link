@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Maps link for Google Search Results
 // @namespace    https://qoomon.github.io
-// @version      1.0.0
+// @version      1.0.1
 // @updateURL    https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @downloadURL  https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @author       qoomon
@@ -14,8 +14,8 @@
   setTimeout(addGoogleMapsButton, 1000);
 
   function addGoogleMapsButton() {
-    const mainMapWidgetElement = document.querySelector('[data-test-id="met"]').closest('[jscontroller]:not([jsaction])')
-      ??document.querySelector('[data-test-id="met"]');
+    const mainMapWidgetElement = document.querySelector('[data-test-id="met"]')?.closest('[jscontroller]:not([jsaction])')
+      ?? document.querySelector('[data-test-id="met"]');
     console.debug("mainMapWidgetElement:", mainMapWidgetElement)
     if (mainMapWidgetElement) {
       // Add a button to open the location in Google Maps
