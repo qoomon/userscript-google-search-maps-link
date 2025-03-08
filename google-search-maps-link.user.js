@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Maps link for Google Search Results
 // @namespace    https://qoomon.github.io
-// @version      1.0.1
+// @version      1.0.2
 // @updateURL    https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @downloadURL  https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @author       qoomon
@@ -16,8 +16,8 @@
   function addGoogleMapsButton() {
     const mainMapWidgetElement = document.querySelector('[data-test-id="met"]')?.closest('[jscontroller]:not([jsaction])')
       ?? document.querySelector('[data-test-id="met"]');
-    console.debug("mainMapWidgetElement:", mainMapWidgetElement)
     if (mainMapWidgetElement) {
+      console.log("[Maps link for Google Search Results]", "Add map button to main map");
       // Add a button to open the location in Google Maps
       const mapsButton = document.createElement("a");
       mapsButton.href = googleMapsUrl();
@@ -42,8 +42,8 @@
     }
 
     const sidbarMapWidgetElement = document.querySelector('img[src^="/maps/"]');
-    console.debug("sidbarMapWidgetElement:", sidbarMapWidgetElement)
     if (sidbarMapWidgetElement) {
+       console.log("[Maps link for Google Search Results]", "Add map link to sidebar map");
       // Wrap the map image in a link to Google Maps
       const link = document.createElement("a");
       link.href = googleMapsUrl();
