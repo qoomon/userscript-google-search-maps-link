@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Maps link for Google Search Results
 // @namespace    https://qoomon.github.io
-// @version      1.0.2
+// @version      1.0.3
 // @updateURL    https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @downloadURL  https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @author       qoomon
