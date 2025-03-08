@@ -41,9 +41,9 @@
       mainMapWidgetElement.appendChild(mapsButton);
     }
 
-    const sidbarMapWidgetElement = document.querySelector('img[src^="/maps/"]');
+    const sidbarMapWidgetElement = document.querySelector('#rhs img[src^="/maps/"]');
     if (sidbarMapWidgetElement) {
-       console.log("[Maps link for Google Search Results]", "Add map link to sidebar map");
+      console.log("[Maps link for Google Search Results]", "Add map link to sidebar map");
       // Wrap the map image in a link to Google Maps
       const link = document.createElement("a");
       link.href = googleMapsUrl();
