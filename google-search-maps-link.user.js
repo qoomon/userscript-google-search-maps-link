@@ -42,7 +42,8 @@
     }
 
     const sidbarMapWidgetElement = document.querySelector('#rhs img[src^="/maps/"]')
-      ?? document.querySelector('#rhs img[src^="https://www.google.com/maps/vt/data="]');
+      ?? document.querySelector('#rhs img[src^="https://www.google.com/maps/vt/data="]')
+      ?? document.querySelector('#rhs img[src^="//www.google.com/maps/vt/data="]');
     if (sidbarMapWidgetElement) {
       console.log("[Maps link for Google Search Results]", "Add map link to sidebar map");
       // Wrap the map image in a link to Google Maps
