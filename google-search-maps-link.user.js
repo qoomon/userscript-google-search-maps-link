@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Maps link for Google Search Results
 // @namespace    https://qoomon.github.io
-// @version      1.0.3
+// @version      1.0.4
 // @updateURL    https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @downloadURL  https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @author       qoomon
@@ -41,7 +41,8 @@
       mainMapWidgetElement.appendChild(mapsButton);
     }
 
-    const sidbarMapWidgetElement = document.querySelector('#rhs img[src^="/maps/"]');
+    const sidbarMapWidgetElement = document.querySelector('#rhs img[src^="/maps/"]')
+      ?? document.querySelector('#rhs img[src^="https://www.google.com/maps/vt/data="]');
     if (sidbarMapWidgetElement) {
       console.log("[Maps link for Google Search Results]", "Add map link to sidebar map");
       // Wrap the map image in a link to Google Maps
