@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Maps link for Google Search Results
 // @namespace    https://qoomon.github.io
-// @version      1.0.6
+// @version      1.0.7
 // @updateURL    https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @downloadURL  https://github.com/qoomon/userscript-google-search-maps-link/raw/main/google-search-maps-link.user.js
 // @author       qoomon
-// @match        https://www.google.*/*
+// @match        https://www.google.com/search?*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @grant        none
 // ==/UserScript==
