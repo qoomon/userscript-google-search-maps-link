@@ -2,4 +2,4 @@
 
 ## Install
 * [Install Violentmonkey](https://violentmonkey.github.io/get-it/) or any other userscript manager
-* [Install this userscript](/raw/refs/heads/main/google-search-maps-link.user.js)
+* [Install this userscript](/google-search-maps-link.user.js)
